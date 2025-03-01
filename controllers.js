@@ -1,7 +1,5 @@
 // controllers.js
 const { createEphemeralToken, synthesizeTranscript  } = require('./services');
-const NodeCache = require('node-cache');
-const translationCache = new NodeCache({ stdTTL: 60 * 60 * 24 }); // Cache TTL set to 24 hours
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 async function postTranscripts(req, res) {
