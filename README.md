@@ -1,3 +1,7 @@
+## Third-Party Dependencies
+This project uses third-party libraries and external APIs (e.g., OpenAI). Their respective licenses and terms of service apply. This project is licensed under MIT, but usage of third-party services must comply with their own terms.
+
+
 This project is a proof of concept for a Speech to Text synthesizer leveraging the new openAI Realtime API for audio capture.
 
 User workflow:
