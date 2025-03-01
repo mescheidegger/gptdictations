@@ -1,0 +1,28 @@
+{
+  "name": "gptdictations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run doprod\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "set NODE_ENV=development&& set TZ=UTC&& node server.js",
+    "startdev": "concurrently \"npm run dev\" \"npm run client\"",
+    "doprod": "export NODE_ENV=production&& node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7"
+  }
+}
